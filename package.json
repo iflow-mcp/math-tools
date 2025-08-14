@@ -1,8 +1,11 @@
 {
-  "name": "math-tools",
+  "name": "@iflow-mcp/math-tools",
   "version": "0.1.1",
   "main": "build/index.js",
   "type":"module",
+  "bin": {
+    "math-tools": "./build/index.js"
+  },
   "scripts": {
     "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
     "start": "npm run build && node build/index.js"
